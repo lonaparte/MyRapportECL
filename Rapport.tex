@@ -1,0 +1,57 @@
+\documentclass{myRapportECL}
+\usepackage{lipsum}
+\usepackage{listings} 
+\usepackage{bigstrut}
+\title{} %Titre du fichier
+
+\begin{document}
+
+\lstset{numbers=left, 
+	basicstyle=\small\sffamily,
+	numbers=left,
+ 	numberstyle=\tiny,
+	frame=none,
+	tabsize=4,
+	columns=fixed,
+	showstringspaces=false,
+	showtabs=false,
+	keepspaces,
+	commentstyle=\color{red},
+	keywordstyle=\color{blue},
+    breaklines=true,
+    backgroundcolor=\color{lightgray!40!white},
+    basicstyle=\ttfamily,
+    commentstyle=\ttfamily\color{green!40!black}
+} 
+
+%----------- Informations du rapport ---------
+
+\titre{} %Titre du fichier .pdf
+\UE{} %Nom de la UE
+\sujet{} %Nom du sujet
+
+\enseignant{Prénom \textsc{Nom}} %Nom de l'enseignant
+
+\eleves{Prénom \textsc{NOM} \\
+		Prénom \textsc{NOM} } %Nom des élèves
+
+%----------- Initialisation -------------------
+        
+\fairemarges %Afficher les marges
+\fairepagedegarde %Créer la page de garde
+\tabledematieres %Créer la table de matières
+
+%------------ Corps du rapport ----------------
+\centerline{\textbf{\huge{"Réponse uniquement d'une base de données"}}}
+
+\section{Introduction}
+
+\section{Manipulation}
+
+
+\section{Conclusion}
+\end{document}
+
+% \begin{lstlisting}[language={prolog}]
+%     mon_setof(Terme, Buts, Set) :- findall(Terme, Buts, Liste), setof(Terme, Terme^member(Terme, Liste), Set), !.
+% \end{lstlisting}
